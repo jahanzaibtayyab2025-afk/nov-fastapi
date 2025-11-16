@@ -15,7 +15,7 @@ from nov_fastapi.routes import chat, sessions
 
 # Create FastAPI app instance
 app = FastAPI(
-    title="Conversational AI Agent API",
+    title="Conversational AI Agent API 2",
     description="""
     REST API for conversational AI agents using OpenAI Agent SDK with Google Gemini.
     
@@ -161,7 +161,7 @@ async def generic_exception_handler(request: Request, exc: Exception):
 async def root():
     """Root endpoint with API information."""
     return {
-        "name": "Conversational AI Agent API",
+        "name": "Conversational AI Agent API 2",
         "version": "0.1.0",
         "description": "REST API for conversational AI agents",
     }

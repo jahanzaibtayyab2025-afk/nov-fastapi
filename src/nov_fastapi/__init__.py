@@ -1,4 +1,4 @@
-"""Nov FastAPI - Conversational AI Agent API."""
+"""Nov FastAPI - Conversational AI Agent API. 2"""
 
 from nov_fastapi.main import main
 

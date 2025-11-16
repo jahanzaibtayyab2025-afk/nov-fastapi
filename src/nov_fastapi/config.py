@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite+aiosqlite:///./sessions.db"
 
     # Application Settings
-    app_name: str = "Conversational AI Agent API"
+    app_name: str = "Conversational AI Agent API 2"
     app_version: str = "0.1.0"
     debug: bool = False
 

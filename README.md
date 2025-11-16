@@ -1,4 +1,4 @@
-# Conversational AI Agent API
+# Conversational AI Agent API 2
 
 REST API for conversational AI agents using OpenAI Agent SDK with Google Gemini.
 
@@ -14,16 +14,19 @@ REST API for conversational AI agents using OpenAI Agent SDK with Google Gemini.
 ## Installation
 
 1. Install dependencies using `uv`:
+
 ```bash
 uv sync
 ```
 
 2. Create a `.env` file from `.env.example`:
+
 ```bash
 cp .env.example .env
 ```
 
 3. Add your Gemini API credentials to `.env`:
+
 ```
 GEMINI_API_KEY=your_gemini_api_key_here
 GEMINI_BASE_URL=https://generativelanguage.googleapis.com/v1beta
@@ -40,11 +43,13 @@ nov-fastapi
 ```
 
 Or using Python directly:
+
 ```bash
 python -m nov_fastapi.main
 ```
 
 Or using uvicorn:
+
 ```bash
 uvicorn nov_fastapi.main:app --reload
 ```
@@ -56,6 +61,7 @@ nov-fastapi-prod
 ```
 
 Or using uvicorn:
+
 ```bash
 uvicorn nov_fastapi.main:app --host 0.0.0.0 --port 8000
 ```
@@ -63,6 +69,7 @@ uvicorn nov_fastapi.main:app --host 0.0.0.0 --port 8000
 ## API Endpoints
 
 ### Chat Endpoint
+
 - **POST** `/api/v1/chat`
 - **Request Body:**
   ```json
@@ -81,10 +88,12 @@ uvicorn nov_fastapi.main:app --host 0.0.0.0 --port 8000
   ```
 
 ### Session Management
+
 - **POST** `/api/v1/sessions` - Create a new session
 - **GET** `/api/v1/sessions/{session_id}` - Get session info and conversation history
 
 ### Health Check
+
 - **GET** `/health` - Health check endpoint
 
 ## Project Structure
@@ -114,6 +123,7 @@ src/nov_fastapi/
 ## Development
 
 Install development dependencies:
+
 ```bash
 uv sync --extra dev
 ```
@@ -121,4 +131,3 @@ uv sync --extra dev
 ## License
 
 MIT
-
