@@ -16,6 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
+start="nov_fastapi.main:main_prod"
 nov-fastapi = "nov_fastapi:main"
 nov-fastapi-prod = "nov_fastapi.main:main_prod"
 
